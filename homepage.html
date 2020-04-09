@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      <link rel='stylesheet' href='styles.css>
+    </style>
+  </head>
+  <body>
+    <div class='top-bar'>
+      <span class='top-bar-text'>NYT Spelling <img class='top-image' src='https://www.nytimes.com/games-assets/v2/assets/bee-ready-0.svg' alt="Bee"> Solver</span><span class='top-bar-links'><button class='top-bar-link-1' href="">Home</button><span class='top-bar-divider'></span><button class='top-bar-link-2' href="" >About</button></span>
+    </div>
+    <div class='container'>
+      <div class = 'hexagon-container'>
+        <div class = 'hexagons'>
+          <div class='hexagon-row'>
+            <span class='hexagon'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>
+              </div>
+              <div class = 'hexagon-bottom'></div>
+            </span>
+            <span class='hexagon'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>
+              </div>
+              <div class = 'hexagon hexagon-bottom'></div>
+            </span>
+          </div>
+          <div class='hexagon-row-center'>
+            <span class='hexagon-center'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>
+              </div>
+              <div class = 'hexagon hexagon-bottom'></div>
+            </span>
+            <span class='hexagon-center'>
+              <div class = 'hexagon-top center-hexagon'></div>
+              <div class = 'hexagon-middle center-hexagon'>
+                <input maxlength=1 class='hexagon-content'></input>
+              </div>
+              <div class = 'center-hexagon hexagon-bottom'></div>
+            </span>
+            <span class='hexagon-center'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>
+              </div>
+              <div class = 'hexagon hexagon-bottom'></div>
+            </span>
+          </div>
+          <div class='hexagon-row'>
+            <span class='hexagon'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>      
+              </div>
+              <div class = 'hexagon hexagon-bottom'></div>
+            </span>
+            <span class='hexagon'>
+              <div class = 'hexagon-top'></div>
+              <div class = 'hexagon-middle'>
+                <input maxlength=1 class='hexagon-content'></input>            
+              </div>
+              <div class = 'hexagon hexagon-bottom'></div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='button-container'>
+        <button class="solve-button" onclick="solve(this)">SOLVE</button>
+      </div>
+    </div>
+    <span class='solution-title'>
+      <img src='https://www.nytimes.com/games-assets/v2/assets/bee-ready-0.svg' style='height: 50px; width: 53px;'> Solutions
+    </span>
+    <div class='solution-container'>
+      <p class="solutions">0 Words Found: </p>
+    </div>
+  </body>
+</html>
