@@ -1,0 +1,262 @@
+body {
+  width: 100%;
+  background: white;
+  height: 100%;
+  border: 0px;
+  margin: 0px;
+  font-family: ubuntu;
+}
+
+.top-bar {
+  height: 80px;
+  width: 100%;
+  color:black;
+  border-bottom: 4px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar-text {
+  font-family: roboto-slab;
+  font-size: 48pt;
+  margin: auto;
+  text-align: left;
+  width: 45%;
+}
+
+.top-image {
+  height: 60px;
+  width: 63px;
+  top: 7px;
+  position: relative;
+}
+
+.top-bar-links {
+  margin: auto;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content:flex-end;
+}
+
+.top-bar-link-1 {
+  font-size: 20pt;
+  width: 20%;  
+  height:100%;
+  background: white;
+  color: #f8cd05;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  text-decoration: none;
+  padding: 0px;
+  v-index: 4px !important;
+}
+
+.top-bar-link-2 {
+  font-size: 20pt;
+  width: 21%;  
+  height:100%;
+  background: white;
+  color: #f8cd05;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  text-decoration: none;
+  padding: 0px;
+  v-index: 2px !important;
+}
+
+
+.top-bar-divider {
+  width: 2px;
+  height: 80%;
+  background: grey;
+  position: relative;
+  top: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.top-bar-link-1:hover {
+  background:#f8cd05;
+  box-shadow: 5px 5px 2px 0px lightgrey;
+  z-index: 2px;
+  color: white;
+}
+
+.top-bar-link-2:hover {
+  background:#f8cd05;
+  box-shadow: 5px 5px 2px 0px lightgrey;
+  z-index: 2px;
+  color: white;
+}
+
+
+
+.container {
+  background: white;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.hexagon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hexagons {
+  width: 360px;
+  height: 332px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 3px solid grey;
+  border-radius: 182px;
+  align-content: center;
+}
+
+.hexagon-row {
+  display: flex;
+  width: 240px;
+  height: 104px;
+  padding-left:60px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.hexagon-row-center {
+  display: flex;
+  width: 360px;
+  height: 104px;
+  justify-content: space-evenly;
+}
+
+
+.hexagon{
+  flex-basis: 104px;
+}
+
+.hexagon-center{
+  flex-basis: 104px;
+}
+
+.center-hexagon.hexagon-top {
+  border-bottom: 30px solid #f8cd05;
+}
+
+.center-hexagon.hexagon-middle {
+  background: #f8cd05;
+}
+
+.center-hexagon.hexagon-bottom {
+  border-top : 30px solid #f8cd05;
+}
+
+.hexagon-top {
+  width: 0;
+  border-bottom: 30px solid rgb(230, 230, 230);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hexagon-middle {
+  width: 104px;
+  height: 60px;
+  background: rgb(230, 230, 230);
+  justify-content:center;
+  display: flex;
+  vertical-align: middle;
+}
+
+.hexagon-bottom {
+  width: 0;
+  border-top: 30px solid rgb(230, 230, 230);;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hexagon-content {
+  padding: none;
+  color: black;
+  font-size: 40pt;
+  font-weight: bold;
+  width: 50%;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  padding-bottom: 8px;
+  caret-color: #f8cd05;
+  text-transform:uppercase;
+}
+
+.center-hexagon-content {
+  padding: none;
+  color: black;
+  font-size: 40pt;
+  font-weight: bold;
+  width: 50%;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  padding-bottom: 8px;
+  text-transform:uppercase;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+.solve-button {
+  color: #f8cd05;
+  font-size: 22pt;
+  height: 60px;
+  width: 366px;
+  align-items: center;
+  border-radius: 30px;
+  background: white;
+  border-color: grey;
+}
+
+.solve-button:focus {
+    outline:none;
+    background: #f8cd05;
+    color: white;
+    box-shadow: 5px 5px 5px 0px grey !important;
+}
+
+.solve-button:hover {
+    box-shadow: 10px 10px 10px 0px grey;
+}
+
+.button-container {
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  text-align:center;
+  display:flex;
+  padding-top: 10px;
+}
+
+.solution-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.solution-title {
+  color:#f8cd05 !important;
+  font-size: 40pt;
+  padding-left: 170px;
+}
+
+.solutions {
+  border: 3px solid grey;
+  width: 80%;
+  font-size: 16pt;
+  color: black;
+  min-height: 200px;
+  box-shadow: 4px 4px 4px 2px lightgray;
+  overflow-wrap: break-word;
+}
